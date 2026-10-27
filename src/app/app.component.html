@@ -1,0 +1,18 @@
+<div class="site-shell">
+  <header class="topbar">
+    <a class="brand" routerLink="/"><span class="brand-mark">A</span><span>Academia<span class="brand-accent">+</span><small>Portal de aprendizagem</small></span></a>
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Início</a>
+      <a routerLink="/cursos" routerLinkActive="active">Cursos</a>
+      <a routerLink="/professores" routerLinkActive="active">Professores</a>
+      <a routerLink="/galeria" routerLinkActive="active">Galeria</a>
+      <a routerLink="/produtos" routerLinkActive="active">Produtos</a>
+      <a routerLink="/noticias" routerLinkActive="active">Notícias</a>
+      <a routerLink="/sobre" routerLinkActive="active">Sobre</a>
+      <a routerLink="/contato" routerLinkActive="active">Contato</a>
+    </nav>
+    <a class="login-link" routerLink="/login">Entrar <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="main-content"><router-outlet /></main>
+  <footer class="footer"><span>Academia+ · Projeto acadêmico em Angular</span><span>Aprender abre caminhos.</span></footer>
+</div>
